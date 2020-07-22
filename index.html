@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    // this is login area
+
     <div id="login-area">
         <h1 class="text-center">Welcome to Mothers Bank</h1>
         <div class="submit-area">
@@ -20,7 +22,13 @@
             <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
+
+    // this is transaction area
+
     <div id="transaction-area">
+
+        // this is deposit, withdraw and balance count
+
         <div class="row">
             <div class="col-md-4">
                 <div class="deposit status">
@@ -41,6 +49,9 @@
                 </div>
             </div>
         </div>
+
+        // this is deposit and withdraw submit
+
         <div class="row">
             <div class="col-md-6">
                 <div class="submit-area">
@@ -95,11 +106,15 @@
             document.getElementById("withdrawAmount").value = "";
         })
 
+        // this is get input number function
+
         function getInputNumber(id){
             const amount = document.getElementById(id).value;
             const amountNumber = parseFloat(amount);
             return amountNumber;
         }
+
+        // this is update amount function
         
         function updateSpanText(id, depositNumber){
             const current = document.getElementById(id).innerText;
