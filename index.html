@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    // this is login area
+    <!-- this is login area -->
 
     <div id="login-area">
         <h1 class="text-center">Welcome to Mothers Bank</h1>
@@ -23,11 +23,11 @@
         </div>
     </div>
 
-    // this is transaction area
+     <!--this is transaction area-->
 
     <div id="transaction-area">
 
-        // this is deposit, withdraw and balance count
+        <!--this is deposit, withdraw and balance count-->
 
         <div class="row">
             <div class="col-md-4">
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        // this is deposit and withdraw submit
+        <!--this is deposit and withdraw submit-->
 
         <div class="row">
             <div class="col-md-6">
@@ -116,10 +116,10 @@
 
         // this is update amount function
         
-        function updateSpanText(id, depositNumber){
+        function updateSpanText(id, addNumber){
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
-            const totalAmount = depositNumber + currentNumber;
+            const totalAmount = addNumber + currentNumber;
 
             document.getElementById(id).innerText = totalAmount;
         }
